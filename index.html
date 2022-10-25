@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Sample Website</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            font-style: italic;
+        }
+        .bgimage{
+            background-image: url('https://burst.shopifycdn.com/photos/office-staff-typing-on-laptop.jpg?width=925&format=pjpg&exif=1&iptc=1');
+            background-size: 120% 100%;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100vh;
+        }
+        .menu{
+            width: 100%;
+            height: 100px;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .leftmenu{
+            width: 20%;
+            line-height: 100px;
+            float: left;
+        }
+        .leftmenu h5{
+            padding-left: 70px;
+            font-weight: bold;
+            color: orange;
+            font-size: 23px;
+            font-family: 'Maven Pro', sans-serif;
+        }
+        .leftmenu h5:hover{
+            color: rgb(163, 223, 0);
+            cursor: pointer;
+            zoom: 1.2;
+            text-transform: uppercase;
+        }
+        .rightmenu{
+            width: 70%;
+            height: 100px;
+            float: right;
+        }
+        .rightmenu ul{
+            margin-left: 100px;
+        }
+
+        .rightmenu ul li {
+            display: flex;
+            display: inline-block;
+            list-style: none;
+            font-size: 22px;
+            color:brown;
+            font-weight: bold;
+            line-height: 100px;
+            margin-left: 40px;
+            text-transform: uppercase;
+        }
+        #li:hover{
+            color: greenyellow;
+        }
+        #li{
+            text-decoration: none;
+            display: flex;
+            display: inline-block;
+            list-style: none;
+            color:brown;
+            text-transform: uppercase;
+        }
+        .rightmenu ul li:hover{
+            cursor: pointer;
+            zoom: 1.2;
+            color: orange;
+        }
+         .text{
+            width: 100%;
+            margin-top: 250px;
+            text-transform: uppercase;
+            text-align: center;
+         }
+         .text h5{
+            font-size: 20px;
+            font-family: monospace;
+            color: #68633c;
+        }
+        .text h3{
+            font-size: 23px;
+            font-family: monospace;
+            color: #4897a1;
+        }
+        .text h1{
+            color: #68633c;
+            font-size: 60px;
+            font-weight: 700px;
+        }
+        .text h1:hover{
+            color: #4897a1;
+        }
+        #butttonone{
+            background-color: white;
+            border: none;
+            font-size: 18px;
+            font-family: monospace;
+            text-transform: uppercase;
+            font-weight: bold;
+            line-height: 40px;
+            width: 150px;
+            margin-top: 15px;
+            border: 3px solid brown;
+            border-radius: 5px;
+        }
+        #butttontwo{
+            background-color: white;
+            border: none;
+            font-size: 18px;
+            font-family: monospace;
+            text-transform: uppercase;
+            font-weight: bold;
+            line-height: 40px;
+            width: 150px;
+            margin-top: 15px;
+            border: 3px solid brown;
+            border-radius: 5px;
+        }
+        #butttonone:hover{
+            background-color: transparent;
+            border: 3px solid rgb(46, 165, 42);
+            border-radius: 20px;
+        }
+        #butttontwo:hover{
+            background-color: transparent;
+            border: 3px solid rgb(46, 165, 42);
+            border-radius: 20px;
+        }
+        #one{
+            text-decoration: none;
+            color: chartreuse;
+        }
+        #one:hover{
+            color: brown;
+        }
+        #two{
+            text-decoration: none;
+            color: chartreuse;
+        }
+        #two:hover{
+            color: brown;
+        }
+        
+</style>
+</head>
+<body>
+    <div class="bgimage">
+            <div class="menu">
+                <div class="leftmenu" >
+                    <h5>Rana_Rabees</h5>
+                </div>
+                <div class="rightmenu">
+                    <ul>
+                        <li><i class='bx bx-home'></i> <a id="li" href="#" target="_rana">Home     </a></li>
+                        <li><i class='bx bxs-info-circle'></i> <a id="li" href="#" target="_rana"> Info </a></li>
+                        <li><i class='bx bx-dumbbell'></i> <a id="li" href="#" target="_rana">Works    </a></li>
+                        <li><i class='bx bxl-blogger'></i> <a id="li" href="#" target="_rana">Blogs    </a></li>
+                        <li><i class='bx bxs-contact' ></i> <a id="li" href="#" target="_rana">Contact  </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text">
+                <h5>Design Develpoment Branding </h5>
+                <h1>Creative & Experienced</h1>
+                <h3>We Are The One Of The World's Top Creative Design Agencies</h3>
+                <button id="butttonone"><a id="one" href="#" target="_rana" > Learn More <i class="fa-sharp fa-solid fa-book-open-reader"></i></a></button>
+                <button id="butttontwo"><a id="two" href="#" target="_rana" > Thank You <i class='bx bxs-like bx-spin-hover'></i></a></button>
+            </div>
+    </div>
+    <!-- <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script> -->
+
+</body>
+</html>
